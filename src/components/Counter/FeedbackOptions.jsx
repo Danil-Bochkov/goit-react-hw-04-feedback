@@ -4,13 +4,13 @@ import PropTypes from 'prop-types';
 const FeedbackOptions = ({ onClickBtns }) => (
   <div className="FeedbackField">
     <div className="FeedbackField__btn">
-      <button type="button" onClick={() => onClickBtns('good')}>
+      <button type="button" name="good" onClick={onClickBtns}>
         Good
       </button>
-      <button type="button" onClick={() => onClickBtns('neutral')}>
+      <button type="button" name="neutral" onClick={onClickBtns}>
         Neutral
       </button>
-      <button type="button" onClick={() => onClickBtns('bad')}>
+      <button type="button" name="bad" onClick={onClickBtns}>
         Bad
       </button>
     </div>
